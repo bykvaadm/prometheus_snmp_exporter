@@ -5,7 +5,7 @@ Used with:
 - https://github.com/prometheus/snmp_exporter/tree/master/generator
 - https://github.com/helm/charts/tree/master/stable/prometheus-snmp-exporter (change image version to latest)
 
-Available configs:
+## Available configs:
 
   Fortinet:
   - Fortianalizer
