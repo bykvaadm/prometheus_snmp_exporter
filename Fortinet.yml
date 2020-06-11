@@ -1,0 +1,435 @@
+Fortianalyzer:
+  version: 2
+  auth:
+    community: public
+  walk: []
+  get:
+  - 1.3.6.1.4.1.12356.100.1.1.1.0
+  - 1.3.6.1.4.1.12356.101.4.1.8.0
+  - 1.3.6.1.4.1.12356.103.2.1.1.0
+  - 1.3.6.1.4.1.12356.103.2.1.2.0
+  - 1.3.6.1.4.1.12356.103.2.1.3.0
+  - 1.3.6.1.4.1.12356.103.2.1.4.0
+  - 1.3.6.1.4.1.12356.103.2.1.5.0
+  - 1.3.6.1.4.1.12356.103.2.1.7.0
+  - 1.3.6.1.4.1.12356.103.2.1.8.0
+  metrics:
+  ### Fortigate
+  - name: fgSysSesCount
+    oid: 1.3.6.1.4.1.12356.101.4.1.8
+    type: gauge
+    help: Number of active sessions on the device - 1.3.6.1.4.1.12356.101.4.1.8
+  ### Fortinet
+  - name: fnSysSerial
+    oid: 1.3.6.1.4.1.12356.100.1.1.1
+    type: DisplayString
+    help: Device serial number - 1.3.6.1.4.1.12356.100.1.1.1
+  ### Fortimanager
+  - name: fmSysCpuUsage
+    oid: 1.3.6.1.4.1.12356.103.2.1.1
+    type: gauge
+    help: Current CPU usage (percentage) - 1.3.6.1.4.1.12356.103.2.1.1
+  - name: fmSysMemUsed
+    oid: 1.3.6.1.4.1.12356.103.2.1.2
+    type: gauge
+    help: Current memory used (KB) - 1.3.6.1.4.1.12356.103.2.1.2
+  - name: fmSysMemCapacity
+    oid: 1.3.6.1.4.1.12356.103.2.1.3
+    type: gauge
+    help: Total physical and swap memory installed (KB) - 1.3.6.1.4.1.12356.103.2.1.3
+  - name: fmSysDiskUsage
+    oid: 1.3.6.1.4.1.12356.103.2.1.4
+    type: gauge
+    help: Current hard disk usage (MB) - 1.3.6.1.4.1.12356.103.2.1.4
+  - name: fmSysDiskCapacity
+    oid: 1.3.6.1.4.1.12356.103.2.1.5
+    type: gauge
+    help: Total hard disk capacity (MB) - 1.3.6.1.4.1.12356.103.2.1.5
+  - name: fmSysVersion
+    oid: 1.3.6.1.4.1.12356.103.2.1.7
+    type: DisplayString
+    help: Firmware version of the device - 1.3.6.1.4.1.12356.103.2.1.7
+  - name: fmSysUpTime
+    oid: 1.3.6.1.4.1.12356.103.2.1.8
+    type: counter
+    help: The 64bit time (in hundredths of a second) since the network management
+      portion of the system was last re-initialized. - 1.3.6.1.4.1.12356.103.2.1.8
+Fortigate:
+  version: 2
+  auth:
+    community: public
+  walk:
+  - 1.3.6.1.2.1.2.2.1.10
+  - 1.3.6.1.2.1.31.1.1.1.1
+  - 1.3.6.1.2.1.31.1.1.1.10
+  - 1.3.6.1.2.1.31.1.1.1.15
+  - 1.3.6.1.2.1.31.1.1.1.18
+  - 1.3.6.1.4.1.12356.101.4.1
+  - 1.3.6.1.4.1.12356.101.8.2.1.1.1
+  - 1.3.6.1.4.1.12356.101.8.2.1.1.17
+  - 1.3.6.1.4.1.12356.101.8.2.1.1.18
+  - 1.3.6.1.4.1.12356.101.8.2.1.1.2
+  - 1.3.6.1.4.1.12356.101.9.2.1.1.1
+  - 1.3.6.1.4.1.12356.101.9.2.1.1.2
+  - 1.3.6.1.4.1.12356.101.12.2.2.1.18
+  - 1.3.6.1.4.1.12356.101.12.2.2.1.19
+  - 1.3.6.1.4.1.12356.101.12.2.2.1.20
+  - 1.3.6.1.4.1.12356.101.12.2.2.1.4
+  - 1.3.6.1.4.1.12356.101.12.2.2.1.6
+  - 1.3.6.1.4.1.12356.101.13.2.1.1
+  - 1.3.6.1.4.1.25461.2.1.2.3.11.1.2
+  get:
+  - 1.3.6.1.4.1.12356.100.1.1.1.0
+  - 1.3.6.1.4.1.12356.101.4.1.15.0
+  - 1.3.6.1.4.1.12356.101.4.2.1.0
+  - 1.3.6.1.4.1.12356.101.4.2.2.0
+  - 1.3.6.1.4.1.12356.101.4.6.2.5.0
+  - 1.3.6.1.4.1.12356.101.13.1.1.0
+  - 1.3.6.1.4.1.12356.101.13.1.3.0
+  - 1.3.6.1.4.1.12356.101.13.1.4.0
+  - 1.3.6.1.4.1.12356.101.13.1.5.0
+  - 1.3.6.1.4.1.12356.101.13.1.6.0
+  - 1.3.6.1.4.1.12356.101.13.1.7.0
+  metrics:
+  ### OTHER
+  - name: fgSIAdvSesSyncQFCount
+    oid: 1.3.6.1.4.1.12356.101.4.6.2.5
+    type: gauge
+    help: The sync queue full counter, reflecting bursts on the sync queue. - 1.3.6.1.4.1.12356.101.4.6.2.5
+  ### VPN
+  - name: fgVpnTunEntInOctets
+    oid: 1.3.6.1.4.1.12356.101.12.2.2.1.18
+    type: counter
+    help: Number of bytes received on tunnel - 1.3.6.1.4.1.12356.101.12.2.2.1.18
+    indexes:
+    - labelname: fgVpnTunEntIndex
+      type: gauge
+  - name: fgVpnTunEntOutOctets
+    oid: 1.3.6.1.4.1.12356.101.12.2.2.1.19
+    type: counter
+    help: Number of bytes sent out on tunnel - 1.3.6.1.4.1.12356.101.12.2.2.1.19
+    indexes:
+    - labelname: fgVpnTunEntIndex
+      type: gauge
+  - name: fgVpnTunEntStatus
+    oid: 1.3.6.1.4.1.12356.101.12.2.2.1.20
+    type: EnumAsStateSet
+    help: Current status of tunnel (up or down) - 1.3.6.1.4.1.12356.101.12.2.2.1.20
+    indexes:
+    - labelname: fgVpnTunEntIndex
+      type: gauge
+    enum_values:
+      1: down
+      2: up
+  - name: fgVpnTunEntRemGwyIp
+    oid: 1.3.6.1.4.1.12356.101.12.2.2.1.4
+    type: InetAddressIPv4
+    help: IP of remote gateway used by the tunnel - 1.3.6.1.4.1.12356.101.12.2.2.1.4
+    indexes:
+    - labelname: fgVpnTunEntIndex
+      type: gauge
+  - name: fgVpnTunEntLocGwyIp
+    oid: 1.3.6.1.4.1.12356.101.12.2.2.1.6
+    type: InetAddressIPv4
+    help: IP of local gateway used by the tunnel - 1.3.6.1.4.1.12356.101.12.2.2.1.6
+    indexes:
+    - labelname: fgVpnTunEntIndex
+      type: gauge
+  ### IPS
+  - name: fgIpsIntrusionsDetected
+    oid: 1.3.6.1.4.1.12356.101.9.2.1.1.1
+    type: counter
+    help: Number of intrusions detected since start-up in this virtual domain - 1.3.6.1.4.1.12356.101.9.2.1.1.1
+    indexes:
+    - labelname: fgVdEntIndex
+      type: gauge
+  - name: fgIpsIntrusionsBlocked
+    oid: 1.3.6.1.4.1.12356.101.9.2.1.1.2
+    type: counter
+    help: Number of intrusions blocked since start-up in this virtual domain - 1.3.6.1.4.1.12356.101.9.2.1.1.2
+    indexes:
+    - labelname: fgVdEntIndex
+      type: gauge
+  ### ANTIVIRUS
+  - name: fgAvVirusDetected
+    oid: 1.3.6.1.4.1.12356.101.8.2.1.1.1
+    type: counter
+    help: Number of virus transmissions detected in the virtual domain since start-up
+      - 1.3.6.1.4.1.12356.101.8.2.1.1.1
+    indexes:
+    - labelname: fgVdEntIndex
+      type: gauge
+  - name: fgAvOversizedDetected
+    oid: 1.3.6.1.4.1.12356.101.8.2.1.1.17
+    type: counter
+    help: Number of over-sized file transmissions detected in the virtual domain since
+      start-up - 1.3.6.1.4.1.12356.101.8.2.1.1.17
+    indexes:
+    - labelname: fgVdEntIndex
+      type: gauge
+  - name: fgAvOversizedBlocked
+    oid: 1.3.6.1.4.1.12356.101.8.2.1.1.18
+    type: counter
+    help: Number of over-sized file transmissions blocked in the virtual domain since
+      start-up - 1.3.6.1.4.1.12356.101.8.2.1.1.18
+    indexes:
+    - labelname: fgVdEntIndex
+      type: gauge
+  - name: fgAvVirusBlocked
+    oid: 1.3.6.1.4.1.12356.101.8.2.1.1.2
+    type: counter
+    help: Number of virus transmissions blocked in the virtual domain since start-up
+      - 1.3.6.1.4.1.12356.101.8.2.1.1.2
+    indexes:
+    - labelname: fgVdEntIndex
+      type: gauge
+  #### HA
+  - name: fgHaSystemMode
+    oid: 1.3.6.1.4.1.12356.101.13.1.1
+    type: EnumAsStateSet
+    help: High-availability mode (Standalone, A-A or A-P) - 1.3.6.1.4.1.12356.101.13.1.1
+    enum_values:
+      1: standalone
+      2: activeActive
+      3: activePassive
+  - name: fgHaPriority
+    oid: 1.3.6.1.4.1.12356.101.13.1.3
+    type: gauge
+    help: HA clustering priority of the device (default = 127) - 1.3.6.1.4.1.12356.101.13.1.3
+  - name: fgHaOverride
+    oid: 1.3.6.1.4.1.12356.101.13.1.4
+    type: EnumAsStateSet
+    help: Status of a master override flag - 1.3.6.1.4.1.12356.101.13.1.4
+    enum_values:
+      1: disabled
+      2: enabled
+  - name: fgHaAutoSync
+    oid: 1.3.6.1.4.1.12356.101.13.1.5
+    type: EnumAsStateSet
+    help: Configuration of an automatic configuration synchronization (enabled or
+      disabled) - 1.3.6.1.4.1.12356.101.13.1.5
+    enum_values:
+      1: disabled
+      2: enabled
+  - name: fgHaSchedule
+    oid: 1.3.6.1.4.1.12356.101.13.1.6
+    type: EnumAsStateSet
+    help: Load-balancing schedule of cluster (in A-A mode) - 1.3.6.1.4.1.12356.101.13.1.6
+    enum_values:
+      1: none
+      2: hub
+      3: leastConnections
+      4: roundRobin
+      5: weightedRoundRobin
+      6: random
+      7: ipBased
+      8: ipPortBased
+  - name: fgHaGroupName
+    oid: 1.3.6.1.4.1.12356.101.13.1.7
+    type: DisplayString
+    help: HA cluster group name - 1.3.6.1.4.1.12356.101.13.1.7
+  - name: fgHaStatsHostname
+    oid: 1.3.6.1.4.1.12356.101.13.2.1.1.11
+    type: DisplayString
+    help: Host name of the specified cluster member - 1.3.6.1.4.1.12356.101.13.2.1.1.11
+    indexes:
+    - labelname: fgHaStatsIndex
+      type: gauge
+  - name: fgHaStatsAvCount
+    oid: 1.3.6.1.4.1.12356.101.13.2.1.1.10
+    type: counter
+    help: Number of anti-virus events triggered on the specified cluster member since
+      start-up - 1.3.6.1.4.1.12356.101.13.2.1.1.10
+    indexes:
+    - labelname: fgHaStatsIndex
+      type: gauge
+    lookups:
+    - labels:
+      - fgHaStatsIndex
+      labelname: fgHaStatsHostname
+      oid: 1.3.6.1.4.1.12356.101.13.2.1.1.11
+      type: DisplayString
+  - name: fgHaStatsCpuUsage
+    oid: 1.3.6.1.4.1.12356.101.13.2.1.1.3
+    type: gauge
+    help: CPU usage of the specified cluster member (percentage) - 1.3.6.1.4.1.12356.101.13.2.1.1.3
+    indexes:
+    - labelname: fgHaStatsIndex
+      type: gauge
+    lookups:
+    - labels:
+      - fgHaStatsIndex
+      labelname: fgHaStatsHostname
+      oid: 1.3.6.1.4.1.12356.101.13.2.1.1.11
+      type: DisplayString
+  - name: fgHaStatsMemUsage
+    oid: 1.3.6.1.4.1.12356.101.13.2.1.1.4
+    type: gauge
+    help: Memory usage of the specified cluster member (percentage) - 1.3.6.1.4.1.12356.101.13.2.1.1.4
+    indexes:
+    - labelname: fgHaStatsIndex
+      type: gauge
+    lookups:
+    - labels:
+      - fgHaStatsIndex
+      labelname: fgHaStatsHostname
+      oid: 1.3.6.1.4.1.12356.101.13.2.1.1.11
+      type: DisplayString
+  - name: fgHaStatsNetUsage
+    oid: 1.3.6.1.4.1.12356.101.13.2.1.1.5
+    type: gauge
+    help: Network bandwidth usage of specified cluster member (kbps) - 1.3.6.1.4.1.12356.101.13.2.1.1.5
+    indexes:
+    - labelname: fgHaStatsIndex
+      type: gauge
+    lookups:
+    - labels:
+      - fgHaStatsIndex
+      labelname: fgHaStatsHostname
+      oid: 1.3.6.1.4.1.12356.101.13.2.1.1.11
+      type: DisplayString
+  - name: fgHaStatsSesCount
+    oid: 1.3.6.1.4.1.12356.101.13.2.1.1.6
+    type: gauge
+    help: Current session count of specified cluster member - 1.3.6.1.4.1.12356.101.13.2.1.1.6
+    indexes:
+    - labelname: fgHaStatsIndex
+      type: gauge
+    lookups:
+    - labels:
+      - fgHaStatsIndex
+      labelname: fgHaStatsHostname
+      oid: 1.3.6.1.4.1.12356.101.13.2.1.1.11
+      type: DisplayString
+  - name: fgHaStatsIdsCount
+    oid: 1.3.6.1.4.1.12356.101.13.2.1.1.9
+    type: counter
+    help: Number of IDS/IPS events triggered on the specified cluster member since
+      start-up - 1.3.6.1.4.1.12356.101.13.2.1.1.9
+    indexes:
+    - labelname: fgHaStatsIndex
+      type: gauge
+    lookups:
+    - labels:
+      - fgHaStatsIndex
+      labelname: fgHaStatsHostname
+      oid: 1.3.6.1.4.1.12356.101.13.2.1.1.11
+      type: DisplayString
+  ### INTERFACES
+  - name: ifHCOutOctets
+    oid: 1.3.6.1.2.1.31.1.1.1.10
+    type: counter
+    help: The total number of octets transmitted out of the interface, including framing
+      characters - 1.3.6.1.2.1.31.1.1.1.10
+    indexes:
+    - labelname: ifIndex
+      type: gauge
+    lookups:
+    - labels:
+      - ifIndex
+      labelname: ifDescr
+      oid: 1.3.6.1.4.1.25461.2.1.2.3.11.1.2
+      type: DisplayString
+    - labels:
+      - ifIndex
+      labelname: ifName
+      oid: 1.3.6.1.2.1.31.1.1.1.1
+      type: DisplayString
+    - labels:
+      - ifIndex
+      labelname: ifAlias
+      oid: 1.3.6.1.2.1.31.1.1.1.18
+      type: DisplayString
+  - name: ifInOctets
+    oid: 1.3.6.1.2.1.2.2.1.10
+    type: counter
+    help: The total number of octets received on the interface, including framing
+      characters - 1.3.6.1.2.1.2.2.1.10
+    indexes:
+    - labelname: ifIndex
+      type: gauge
+    lookups:
+    - labels:
+      - ifIndex
+      labelname: ifDescr
+      oid: 1.3.6.1.4.1.25461.2.1.2.3.11.1.2
+      type: DisplayString
+    - labels:
+      - ifIndex
+      labelname: ifName
+      oid: 1.3.6.1.2.1.31.1.1.1.1
+      type: DisplayString
+    - labels:
+      - ifIndex
+      labelname: ifAlias
+      oid: 1.3.6.1.2.1.31.1.1.1.18
+      type: DisplayString
+  - name: ifHighSpeed
+    oid: 1.3.6.1.2.1.31.1.1.1.15
+    type: gauge
+    help: An estimate of the interface's current bandwidth in units of 1,000,000 bits
+      per second - 1.3.6.1.2.1.31.1.1.1.15
+    indexes:
+    - labelname: ifIndex
+      type: gauge
+    lookups:
+    - labels:
+      - ifIndex
+      labelname: ifDescr
+      oid: 1.3.6.1.4.1.25461.2.1.2.3.11.1.2
+      type: DisplayString
+    - labels:
+      - ifIndex
+      labelname: ifName
+      oid: 1.3.6.1.2.1.31.1.1.1.1
+      type: DisplayString
+    - labels:
+      - ifIndex
+      labelname: ifAlias
+      oid: 1.3.6.1.2.1.31.1.1.1.18
+      type: DisplayString
+  #### SYSTEM
+  - name: fgSysSes6Count
+    oid: 1.3.6.1.4.1.12356.101.4.1.15
+    type: gauge
+    help: Number of active ipv6 sessions on the device - 1.3.6.1.4.1.12356.101.4.1.15
+  - name: fgSysVersionAv
+    oid: 1.3.6.1.4.1.12356.101.4.2.1
+    type: DisplayString
+    help: Virus signature database version installed on the device - 1.3.6.1.4.1.12356.101.4.2.1
+  - name: fgSysVersionIps
+    oid: 1.3.6.1.4.1.12356.101.4.2.2
+    type: DisplayString
+    help: IPS signature database version installed on the device - 1.3.6.1.4.1.12356.101.4.2.2
+  - name: fgSysSesCount
+    oid: 1.3.6.1.4.1.12356.101.4.1.8.0
+    type: gauge
+    help: "Number of active sessions on the device"
+  - name: fgSysCpuUsage
+    oid: 1.3.6.1.4.1.12356.101.4.1.3.0
+    type: gauge
+    help: "Current CPU usage (percentage)"
+  - name: fgSysMemUsage
+    oid: 1.3.6.1.4.1.12356.101.4.1.4.0
+    type: gauge
+    help: "Current memory utilization (percentage)"
+  - name: fgSysVersion
+    oid: 1.3.6.1.4.1.12356.101.4.1.1.0
+    type: DisplayString
+    help: "Firmware version of the device"
+  - name: fgSysUpTime
+    oid: 1.3.6.1.4.1.12356.101.4.1.20.0
+    type: counter
+    help: "The 64bit time (in hundredths of a second) since the network management portion of the system was last re-initialized."
+  - name: fnSysSerial
+    oid: 1.3.6.1.4.1.12356.100.1.1.1.0
+    type: DisplayString
+    help: "Device serial number. This is the same serial number as given in the ENTITY-MIB tables for the base entity."
+  - name: fgSysDiskCapacity
+    oid: 1.3.6.1.4.1.12356.101.4.1.7.0
+    type: gauge
+    help: "Total hard disk capacity (MB), if disk is present"
+  - name: fgSysDiskUsage
+    oid: 1.3.6.1.4.1.12356.101.4.1.6.0
+    type: gauge
+    help: "Current hard disk usage (MB), if disk is present"
